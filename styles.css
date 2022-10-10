@@ -1,19 +1,36 @@
-/* .crop-container {
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-} */
-/* .crop-container img {
-    margin-top: -100px;
-    margin-left: -200px;
-} */
+/* MAIN PAGE  */
 
-.main-container {
-display: flex;
-justify-content: center;
-
+* {
+    margin: 0px;
+    padding: 0px;
+    height: 390 vh;
+    width: 844 vh;
 }
 
+.main-container {
+    position: relative;
+    height: 844px;
+    width: 390px;
+   
+   }
+
+   .main-image {
+    position: absolute;
+   }
+
 .girlHeadphones {
-  width: 75%;
+    width: 390px;
+    margin: auto;
+  }
+
+
+.main-block {
+    position: absolute;
+    /* margin-bottom: -200px; */
+    background-color: #171B3E;
+    /* margin: auto; */
+    margin-top: 405px;
+    height: 440px;
+    width: 390px;
+    border-radius: 15%;
 }
