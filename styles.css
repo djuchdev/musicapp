@@ -34,3 +34,50 @@
     width: 390px;
     border-radius: 15%;
 }
+
+.main-text-header {
+    font-family: montserrat;
+    font-size: 1.9em;
+    font-weight: bold;
+    color: #EFF0F2;
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+.main-text-subtheader {
+    font-family: montserrat;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #EFF0F2;
+    text-align: center;
+    margin: 0px 20px 0 20px;
+}
+
+.main-bar-login {
+
+    position: absolute;
+    background-color: #E4E1DE;
+    margin: 670px 20px 0 20px;
+    height: 59px;
+    width: 350px;
+    border-radius: 30px 30px 30px 30px;
+
+}
+
+.main-text-login-bar {
+    font-family: montserrat;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin: 16px 50px 0 50px;
+}
+
+.main-text-logo {
+    font-family: montserrat;
+    font-size: 4.0em;
+    font-weight: bold;
+    color: #EFF0F2;
+    text-align: center;
+    margin: 90px 50px 0 50px;
+}
