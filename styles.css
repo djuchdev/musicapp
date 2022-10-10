@@ -1,6 +1,5 @@
-/* MAIN PAGE  */
-
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     height: 390 vh;
@@ -26,9 +25,7 @@
 
 .main-block {
     position: absolute;
-    /* margin-bottom: -200px; */
     background-color: #171B3E;
-    /* margin: auto; */
     margin-top: 405px;
     height: 440px;
     width: 390px;
@@ -80,4 +77,145 @@
     color: #EFF0F2;
     text-align: center;
     margin: 90px 50px 0 50px;
+}
+
+
+
+/* SIGNUP PAGE */
+
+/* .signup-container {
+    position: relative;
+    height: 844px;
+    width: 390px;
+} */
+
+.signup-block-blue {
+    position: relative;
+    background-color: #171B3E;
+    height: 844px;
+    width: 390px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.signup-text-header {
+    font-family: montserrat;
+    font-size: 1.9em;
+    font-weight: bold;
+    color: #EFF0F2;
+    text-align: left;
+    padding: 30px 0 0 30px;
+}
+
+.signup-block-white {
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 728px;
+    width: 390px;
+    margin: 50px 0 0 0;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.signup-text-name-1 {
+    font-family: montserrat;
+    font-size: 1.3em;
+    color: #000000;
+    text-align: left;
+    margin: 0px 20px 0 40px;
+}
+
+.signup-bar-1 {
+    position: absolute;
+    background-color: #EFF0F2;
+    margin: 0px 20px 0 20px;
+    height: 59px;
+    width: 350px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.signup-text-name-2 {
+    font-family: montserrat;
+    font-size: 1.3em;
+    color: #000000;
+    text-align: left;
+    margin: 60px 20px 0 40px;
+}
+
+.signup-bar-2 {
+    position: absolute;
+    background-color: #EFF0F2;
+    margin: 0px 20px 0 20px;
+    height: 59px;
+    width: 350px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.signup-bar-main {
+    position: absolute;
+    display: grid;
+    background-color: #171B3E;
+    font-family: montserrat;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    place-content: center;
+    margin: 120px 20px 0 20px;
+    height: 59px;
+    width: 350px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+
+.signup-line {
+    position: absolute;
+    background-color: #000000;
+    height: 1px;
+    width: 325px;
+    margin: 275px 0px 0 35px;
+}
+
+.signup-or-box {
+    position: absolute;
+    display: grid;
+    background-color: #EFF0F2;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 1.5em;
+    place-content: center;
+    height: 75px;
+    width: 75px;
+    margin: 240px 0px 0 157px;
+}
+
+.social-links {
+    position: absolute;
+    display: flex;
+    place-content: center;
+    gap: 15%;
+    margin: 360px 0px 0 10px;
+    
+}
+
+.social {
+    width: 15%;
+}
+
+.signup-already-user {
+
+    font-family: montserrat;
+    font-size: 1.3em;
+    color: #000000;
+    text-align: center;
+    margin: 460px 20px 0 40px;
+}
+
+a:hover {
+    color: #171B3E;
+}
+
+a:link {
+    color:#000000;
+}
+
+
+a:visited {
+    color:#000000;
 }
