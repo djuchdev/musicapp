@@ -7,6 +7,8 @@ const bodyParser = require("body-parser");
 const session = require("express-session");
 const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
+const FacebookStrategy = require("passport-facebook").Strategy;
+const findOrCreate = require("mongoose-findorcreate");
 
 
 
@@ -41,24 +43,47 @@ const userSchema = new mongoose.Schema ({
 });
 
 userSchema.plugin(passportLocalMongoose);
+userSchema.plugin(findOrCreate);
 
 
 const User = new mongoose.model("User", userSchema);
 
 passport.use(User.createStrategy());
 
-// passport.serializeUser(function(user, done){
-//     done(null, user.id);
-// });
+passport.serializeUser(function(user, done){
+    done(null, user.id);
+});
 
-// passport.deserializeUser(function(id, done){
-//     User.findById(id, function(err, user){
-//         done(err, user);
-//     });
-// });
+passport.deserializeUser(function(id, done){
+    User.findById(id, function(err, user){
+        done(err, user);
+    });
+});
 
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+// passport.serializeUser(User.serializeUser());
+// passport.deserializeUser(User.deserializeUser());
+
+passport.serializeUser(function(user, done){
+    done(null, user);
+})
+
+passport.deserializeUser(function(user, done){
+    done(null, user);
+})
+
+
+passport.use(new FacebookStrategy({
+    clientID: process.env.CLIENT_ID_FB,
+    clientSecret: process.env.CLIENT_SECRET_FB,
+    callbackURL: "http://localhost:3000/auth/facebook/verified"
+  },
+  function(accessToken, refreshToken, profile, cb) {
+    User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+      return cb(err, user);
+    });
+  }
+));
+
 
 app.get("/", function(req, res){
     res.render("index");
@@ -71,6 +96,16 @@ app.get("/signup", function(req, res){
 app.get("/login", function(req, res){
     res.render("login");
 });
+
+app.get('/auth/facebook',
+  passport.authenticate('facebook'));
+
+app.get('/auth/facebook/verified',
+  passport.authenticate('facebook', { failureRedirect: '/signup' }),
+  function(req, res) {
+    // Successful authentication, redirect home.
+    res.redirect('/verified');
+  });
 
 app.get("/verified", function(req, res){
     res.render("verified");
@@ -106,7 +141,7 @@ app.post("/signup", function(req, res){
 app.post("/login", function(req, res){
    
     const user = new User ({
-        email: req.body.email,
+        username: req.body.username,
         password: req.body.password
     });
      
