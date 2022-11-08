@@ -341,20 +341,20 @@ color: white;
 
 
 
-    /* USER START */
+    /* NEW USER CONFIRMED */
 
-    .userstart-container {
+    .new-user-container {
         position: relative;
         height: 844px;
         width: 390px;
        
        }
     
-       .user-start-image {
+       .new-user-image {
         position: absolute;
        }
 
-       .user-start-block {
+       .new-user-block {
         position: absolute;
         background-color: #171B3E;
         margin-top: 405px;
@@ -370,7 +370,7 @@ color: white;
 
       }
 
-      .user-start-text-header {
+      .new-user-text-header {
         font-family: montserrat;
         font-size: 1.9em;
         font-weight: bold;
@@ -379,7 +379,7 @@ color: white;
         margin: 0 50px 0 50px;
     }
     
-    .user-start-text-subheader {
+    .new-user-text-subheader {
         font-family: montserrat;
         font-size: 1.3em;
         font-weight: bold;
@@ -388,7 +388,7 @@ color: white;
         margin: 0px 20px 0 20px;
     }
 
-    .user-start-text-login-bar {
+    .new-user-text-login-bar {
 
         position: absolute;
         background-color: #E4E1DE;
@@ -406,7 +406,7 @@ color: white;
 
 
     
-    .user-start-text-logo {
+    .new-user-text-logo {
         font-family: montserrat;
         font-size: 4.0em;
         font-weight: bold;
@@ -530,7 +530,7 @@ color: white;
     font-size: 1.3em;
     color: #000000;
     text-align: left;
-    margin: 0px 20px 20px 40px;
+    margin: 0px 20px 10px 40px;
 }
 
 .login-bar-1 {
@@ -552,7 +552,7 @@ color: white;
     font-size: 1.3em;
     color: #000000;
     text-align: left;
-    margin: 50px 20px 10px 40px;
+    margin: 70px 20px 10px 40px;
 }
 
 .login-bar-2 {
@@ -811,4 +811,109 @@ a:visited {
     a:visited {
         color:#000000;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+/* //MUSIC MAIN PAGE */
+
+
+    .music-main-container {
+        position: relative;
+        height: 844px;
+        width: 390px;
+       
+       }
+    
+       .music-main-image {
+        position: absolute;
+       }
+    
+    
+    .music-main-block {
+        position: absolute;
+        background-color: #171B3E;
+        height: 844px;
+        width: 390px;
+        border-radius: 5%;
+    }
+
+    .music-main-block-2 {
+        position: absolute;
+        background-color: #20276F;
+        margin-top: 85px;
+        height: 749px;
+        width: 390px;
+        border-radius: 5% 5% 5% 5%;
+    }
+    
+    .music-main-text-header {
+        text-align: right;
+        font-family: montserrat;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #EFF0F2;
+        margin: 30px 40px 0 50px;
+    }
+
+    .music-main-text-header-2 {
+        text-align: right;
+        font-family: montserrat;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #EFF0F2;
+        margin: 0px 40px 0 50px;
+    }
+    
+    
+    .music-main-search {
+        position: absolute;
+        background-color: #EFF0F2;
+        margin: 130px 20px 0 20px;
+        height: 70px;
+        width: 350px;
+        border-radius: 30px;
+        text-align: center;
+        font-family: montserrat;
+        font-size: 1.3em;
+        padding-left: 30px;
+        
+    }
+
+    .dj-avery {
+
+     width: 350px;
+     height: 500px;
+     object-fit: cover;
+     object-position: 50% 0;
+     margin: 225px 0 0 18px;
+     border-radius: 5%;
+    }
+
+    .music-player {
+
+        position: absolute;
+        margin: 0 0 0 45px;
+        padding-top: 10px;
+        border-radius: 15%;
+        /* background-color: #EFF0F2; */
+
+    }
+
+    .music-main-logo {
+    font-family: montserrat;
+    font-size: 6.0em;
+    font-weight: bold;
+    color: #EFF0F2;
+    text-align: center;
+    margin: 70px 50px 0 60px;
+}
     
