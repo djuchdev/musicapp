@@ -57,6 +57,10 @@ app.get("/music-main", function(req, res){
     res.render('music-main');
 });
 
+app.get("/playertest", function(req, res){
+    res.render('playertest');
+});
+
 app.post("/signup", function(req, res){
 
     bcrypt.hash(req.body.password, saltRounds, function(err, hash){

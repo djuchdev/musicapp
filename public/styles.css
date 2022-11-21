@@ -894,7 +894,7 @@ a:visited {
      height: 500px;
      object-fit: cover;
      object-position: 50% 0;
-     margin: 225px 0 0 18px;
+     margin: 225px 0 30px 18px;
      border-radius: 5%;
     }
 
@@ -908,6 +908,7 @@ a:visited {
 
     }
 
+
     .music-main-logo {
     font-family: montserrat;
     font-size: 6.0em;
@@ -917,3 +918,59 @@ a:visited {
     margin: 70px 50px 0 60px;
 }
     
+
+.music-main-playback {
+    position: absolute;
+    margin-top: 
+
+}
+
+#myProgressBar {
+
+    margin: 20px 30px 0 30px;
+    width: 320px;
+}
+
+.fa-3x {
+
+    text-align: center;
+    color: #EFF0F2;
+}
+
+.fa-step-backward {
+
+    margin: 20px 0 0 95px;
+
+}
+
+.fa-play-circle {
+
+    margin: 20px 0 0 25px;
+
+}
+
+.fa-pause-circle {
+
+    margin: 20px 0 0 25px;
+
+}
+
+.fa-step-forward {
+
+    margin: 20px 0 0 25px;
+
+}
+
+#masterSongName {
+    font-family: montserrat ;
+    font-weight: bold;
+    color: #EFF0F2;
+    margin: 0px 0 0px 60px;
+
+}
+
+#songInfo {
+
+    margin: 850px 0 0 90px;
+}
+
